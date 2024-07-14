@@ -15,7 +15,7 @@
       "run_at": "document_start",
       "matches": ["*://*/*"],
       "all_frames": false,
-      "match_about_blank": true
+      "match_about_blank": false
     }
   ],
   "action": {
