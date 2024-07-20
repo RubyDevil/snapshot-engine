@@ -32,7 +32,6 @@ class Snapshot {
 
    /**
     * @param {object} obj The object to create a snapshot of
-    * @param {number} maxDepth The maximum depth into the object properties to capture
     */
    static create(obj) {
       if (obj === null || typeof obj !== "object") return obj;
@@ -62,7 +61,6 @@ class Snapshot {
    /**
     * @param {object} obj1 The first object
     * @param {object} obj2 The second object
-    * @param {number} maxDepth The maximum depth into the object properties to compare
     */
    static compare(obj1, obj2) {
       if (obj1 === null || obj2 === null) return [];
@@ -136,6 +134,8 @@ class Snapshot {
 }
 
 addEventListener("keydown", Snapshot.eventHandler);
+
+window.Snapshot = Snapshot;
 
 Snapshot.log(
    "\nPress Alt + 1 to take snapshot",

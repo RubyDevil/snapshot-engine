@@ -2,8 +2,8 @@
   "manifest_version": 3,
   "name": "Snapshot Engine",
   "short_name": "Snapshot",
-  "description": "A powerful browser extension to take snapshots of a JavaScript object and compare them to see what properties have changed.",
-  "version": "1.0.1",
+  "description": "A browser extension to take snapshots of a JavaScript object and compare them to see which properties have changed.",
+  "version": "1.1.0",
   "permissions": [],
   "content_scripts": [
     {
